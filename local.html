@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Infinity Estética Automotiva</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/local.css" />
+    <script src="javascript/clipboard.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAkCYC_a77L3yEKl_5EVpDaFkKfRtzJF7k",
+            authDomain: "infinityitaquera.firebaseapp.com",
+            databaseURL: "https://infinityitaquera.firebaseio.com",
+            projectId: "infinityitaquera",
+            storageBucket: "infinityitaquera.appspot.com",
+            messagingSenderId: "29143001873"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        function copiar() {
+            document.getElementById("popup").style.opacity = "1";
+            document.getElementById("popup").style.position = "relative";
+            document.getElementById("popup").style.height = "150px";
+            document.getElementById("popup").style.width = "100%";
+        }
+        function soltarCopiar() {
+            document.getElementById("popup").style.opacity = "0";
+            document.getElementById("popup").style.position = "relative";
+            document.getElementById("popup").style.height = "0px";
+            document.getElementById("popup").style.width = "0%";
+        }
+        function sendMail() {
+            var link = "mailto:henriquereissp@gmail.com";
+
+            window.location.href = link;
+        }
+        function abrirPagina() {
+            window.open('https://www.facebook.com/infinityesteticaautomotivasp');
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="interface">
+        <div class="menu-principal">
+            <div class="logo">
+                <!--  <img src="imagens/logo.png"> -->
+            </div>
+            <div class="lista-menu">
+                <ul>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="index.html">Home</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="fotos.html">Fotos</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="local.html">Localização</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="contato.html">Fale
+                            Conosco</a></li>
+                </ul>
+                <div id="zap">
+                    <img src="imagens/zap.png">
+                </div>
+            </div>
+
+        </div>
+        <div id="banner">
+
+
+        </div>
+
+        <div id="marcas">
+            <div id="nome">
+                <h1> Infinity Estética Automotiva. </h1>
+            </div>
+        </div>
+
+        <div id=conteudo-local>
+
+            <P> Av. Campanella, 1537 - Jardim Itapemirim, São Paulo - SP, 08220-830 </p>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d213.67578935821075!2d-46.46263891043198!3d-23.532775341514665!2m2!1f319.9899250502052!2f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x94ce66c96cac0e17%3A0x9a946a8b5a96fe75!2sInfinity+Est%C3%A9tica+Automotiva+(funilaria+e+pintura)!5e1!3m2!1spt-BR!2sbr!4v1538141470780"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <footer id="rodapé">
+            <a href="https://www.facebook.com/infinityesteticaautomotivasp/" target="_blank"><img src="imagens/facebook.png"></a>
+            <h6> © 2015 Inifinity Estética Automotiva. All Rights Reserved. </h6>
+            <h6 id="by"> DESIGN BY HenriqueReis </h6>
+        </footer>
+
+    </div>
+</body>
+
+</html>

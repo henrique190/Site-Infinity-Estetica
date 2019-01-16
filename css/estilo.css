@@ -1,0 +1,367 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+    font-family: 'trajan';
+    src: url("../fontes/trajan-pro.otf");
+}
+
+body {
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+div#interface {
+    width: 900px;
+    background-color: white;
+    margin: -25px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+    padding: 15px;
+}
+
+
+div.menu-principal {
+    background-color: #040404;
+}
+
+
+div.logo {
+width: 200px;
+display: block;
+float: left;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+div.lista-menu {
+box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+height: 38px;
+}
+
+div.lista-menu ul {
+margin: 0px 0px 0px 150px;
+float: left;
+}
+
+div.lista-menu ul li {
+    display: inline-block;
+    color: goldenrod;
+    background-color: #040404;
+    padding: 10px;
+}
+
+
+div.lista-menu ul li:hover {
+    display: inline-block;
+    color: #040404;
+    background-color: goldenrod;
+    padding: 10px;
+    
+}
+
+div.lista-menu ul li a {
+    text-decoration: none;
+    color: goldenrod; 
+
+}
+
+div.lista-menu ul li:hover a {
+    text-decoration: none;
+    color: #040404; 
+
+}
+
+div#zap {
+    float: right;
+    margin-top: 5px;
+}
+
+div#marcas {
+    background-color: #f5f5f5;
+    height: 90px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+}
+
+h1 {
+    margin-bottom: 0px;
+    opacity: 1;
+}
+
+h2 {
+    opacity: 1;
+    margin-top: 0px;
+}
+
+div#inserir-marcas {
+position: absolute;
+top: 270px;
+left: 190px;
+opacity: 0.1;
+}
+
+div#inserir-marcas img {
+    margin-right: 10px;;
+}
+
+div#banner {
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+    height: 200px;
+    background: url(../imagens/banner3.png) no-repeat;
+    background-color: #040404;
+}
+
+div#nome {
+}
+
+div#nome h1 {
+    text-align: center;
+    margin: 20px 10px 20px 30px;
+    opacity: 1;
+    color: rgb(231, 174, 50);
+    text-shadow: 3px 3px 1px rgba(0,0,0, .6);
+    font-size: 45pt;
+}
+
+footer {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+    text-align: center;
+    display: block;
+
+}
+
+footer img {
+    margin-top: 20px;
+}
+
+footer h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+div.fotos1 {
+    height: 100px;
+    background: url(../imagens/reparo.png) no-repeat;
+    width: 200px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+div.fotos1:hover {
+}
+
+div.fotos2 {
+    height: 100px;
+    background: url(../imagens/pintura.png) no-repeat;
+    width: 200px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+div.fotos3 {
+    height: 100px;
+    background: url(../imagens/ouro.png) no-repeat;
+    width: 200px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+div.fotos4 {
+    height: 100px;
+    background: url(../imagens/politriz.png) no-repeat;
+    width: 200px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+div.fotos:hover {
+     
+ transform: scale(1.2);
+
+}
+
+p {
+}
+
+#conteudo-esquerda {
+    height: 550px;
+    margin-left: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+    margin-top: 20px;
+    display: inline-block;
+    width: 180px;;
+    text-align: center;
+    margin-right: 50px;
+    background-color: #f5f5f5;
+}
+
+
+#conteudo-meio {
+    height: 550px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+    margin-top: 20px;
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+     margin-right: 55px;
+    background-color: #f5f5f5;
+}
+
+#conteudo-direita {
+    height: 550px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+    margin-top: 20px;
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+     margin-right: 55px;
+    background-color: #f5f5f5;
+     
+}
+
+#conteudo-direita2 {
+    height: 550px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+    margin-top: 20px;
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    background-color: #f5f5f5;
+     
+}
+
+h2 {
+    font-size: 10pt;
+}
+
+#div > h2 {
+margin-top: 10px;
+}
+
+
+
+div#cartao-principal {
+    background: url(../imagens/cartao.png) no-repeat;
+    margin: 20px 0px 2px 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+    width: 900px;
+    height: 300px;
+}
+
+div#contato {
+    background: url(../imagens/contato2.png) no-repeat;
+    margin: 20px 0px 0px 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+    width: 900px;
+    height: 300px;
+}
+
+div#contato a {
+position: absolute;
+display: block;
+text-decoration: none;
+
+}
+
+
+
+div#contato a.regiao {
+margin: 150px 0px 0px 375px;
+height:  100px;
+width: 100px;
+
+}
+
+div.telefone {
+margin: 30px 0px 0px 0px;
+height: 65px;
+width: 300px;
+}
+
+div.telefone:hover {
+    cursor: -webkit-grab;
+
+}
+
+div.telefone2 {
+margin: 0px 0px 0px 0px;
+height: 65px;
+width: 300px;
+}
+
+div.telefone2:hover {
+    cursor: -webkit-grab;
+
+}
+
+div.email {
+margin: 0px 0px 0px 0px;
+height: 65px;
+width: 300px;
+}
+
+div.email:hover {
+cursor: -webkit-grab;
+}
+
+div.facebook {
+margin: -2px 0px 0px 0px;
+height: 65px;
+width: 310px;
+}
+
+div.facebook:hover {
+cursor: -webkit-grab;
+}
+
+a.endereco {
+margin: -0px 0px 0px 0px;
+height: 40px;
+width: 760px;
+}
+
+a.endereco:hover {
+cursor: -webkit-grab;
+}
+
+#popup {   
+    background-color: rgba(0,0,0, .2);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 0px;
+    width: 0%;
+    opacity: 0;
+    margin: 0px auto 0px auto;
+}
+
+#popup h1 {
+    text-align: center;
+    margin-left: 10px;
+    font-size: 60pt;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    line-height:50%;
+    
+}
+
+
+

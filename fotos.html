@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Infinity Estética Automotiva</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/fotos.css" />
+    <script src="javascript/clipboard.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAkCYC_a77L3yEKl_5EVpDaFkKfRtzJF7k",
+            authDomain: "infinityitaquera.firebaseapp.com",
+            databaseURL: "https://infinityitaquera.firebaseio.com",
+            projectId: "infinityitaquera",
+            storageBucket: "infinityitaquera.appspot.com",
+            messagingSenderId: "29143001873"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        function copiar() {
+            document.getElementById("popup").style.opacity = "1";
+            document.getElementById("popup").style.position = "relative";
+            document.getElementById("popup").style.height = "150px";
+            document.getElementById("popup").style.width = "100%";
+        }
+        function soltarCopiar() {
+            document.getElementById("popup").style.opacity = "0";
+            document.getElementById("popup").style.position = "relative";
+            document.getElementById("popup").style.height = "0px";
+            document.getElementById("popup").style.width = "0%";
+        }
+        function sendMail() {
+            var link = "mailto:henriquereissp@gmail.com";
+
+            window.location.href = link;
+        }
+        function abrirPagina() {
+            window.open('https://www.facebook.com/infinityesteticaautomotivasp');
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="interface">
+        <div class="menu-principal">
+            <div class="logo">
+                <!--  <img src="imagens/logo.png"> -->
+            </div>
+            <div class="lista-menu">
+                <ul>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="index.html">Home</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="fotos.html">Fotos</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="local.html">Localização</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="contato.html">Fale
+                            Conosco</a></li>
+                </ul>
+                <div id="zap">
+                    <img src="imagens/zap.png">
+                </div>
+            </div>
+
+        </div>
+        <div id="banner">
+
+
+        </div>
+
+        <div id="marcas">
+            <div id="nome">
+                <h1> Infinity Estética Automotiva. </h1>
+            </div>
+        </div>
+
+        <div id=conteudo-fotos>
+            <div id="formatar-p">
+                <p> Veja na nossa galeria de fotos, Basta passar o mouse
+                    sobre uma das fotos para ver uma versão ampliada com o antes e depois.</p>
+            </div>
+
+
+            <ul id="album-fotos">
+                <li id="foto01"> <span>- ANTES E DEPOIS</span> </li>
+                <li id="foto02"> <span>- ANTES E DEPOIS </span> </li>
+                <li id="foto03"> <span>- ANTES E DEPOIS</span> </li>
+                <li id="foto04"> <span>- ANTES E DEPOIS"</span> </li>
+                <li id="foto05"> <span>- ANTES E DEPOIS</span> </li>
+                <li id="foto06"> <span>- ANTES E DEPOIS</span> </li>
+                <li id="foto07"> <span>- ANTES E DEPOIS</span> </li>
+                <li id="foto08"> <span>- ANTES E DEPOIS</span> </li>
+                <li id="foto09"> <span>- ANTES E DEPOIS</span> </li>
+            </ul>
+
+        </div>
+
+        <footer id="rodapé">
+            <a href="https://www.facebook.com/infinityesteticaautomotivasp/" target="_blank"><img src="imagens/facebook.png"></a>
+            <h6> © 2015 Inifinity Estética Automotiva. All Rights Reserved. </h6>
+            <h6 id="by"> DESIGN BY HenriqueReis </h6>
+        </footer>
+
+    </div>
+</body>
+
+</html>

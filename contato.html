@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Infinity Estética Automotiva</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="javascript/clipboard.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAkCYC_a77L3yEKl_5EVpDaFkKfRtzJF7k",
+            authDomain: "infinityitaquera.firebaseapp.com",
+            databaseURL: "https://infinityitaquera.firebaseio.com",
+            projectId: "infinityitaquera",
+            storageBucket: "infinityitaquera.appspot.com",
+            messagingSenderId: "29143001873"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        function copiar() {
+            document.getElementById("popup").style.opacity = "1";
+            document.getElementById("popup").style.position = "relative";
+            document.getElementById("popup").style.height = "150px";
+            document.getElementById("popup").style.width = "100%";
+        };
+        function soltarCopiar() {
+            document.getElementById("popup").style.opacity = "0";
+            document.getElementById("popup").style.position = "relative";
+            document.getElementById("popup").style.height = "0px";
+            document.getElementById("popup").style.width = "0%";
+        };
+
+        function sendMail() {
+            var link = "mailto:henriquereissp@gmail.com";
+
+            window.location.href = link;
+        };
+        function abrirPagina() {
+            window.open('https://www.facebook.com/infinityesteticaautomotivasp');
+        };
+
+        function enviarDados() {
+            var vNome = $("#cnome").val();
+            var vEmail = $("#cemail").val();
+            var vTel = $("#ctel").val();
+
+            var vUrl = "ajax.php";
+            var vData = { nome: vNome, email: vEmail, telefone: vTel }
+
+            $.post(vUrl, vData, function (response, status) {
+                if (status = 200) {
+                    var obj = jQuery.parseJSON(response);
+                    $("#resultado").html(
+                        "Formulario enviado com sucesso."
+                    );
+                } else {
+                    $("#resultado").html(
+                        "Erro ao enviar formulario."
+                    );
+                }
+
+            }
+            );
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="interface">
+        <div class="menu-principal">
+            <div class="logo">
+                <!--  <img src="imagens/logo.png"> -->
+            </div>
+            <div class="lista-menu">
+                <ul>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="index.html">Home</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="fotos.html">Fotos</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="local.html">Localização</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="contato.html">Fale
+                            Conosco</a></li>
+                </ul>
+                <div id="zap">
+                    <img src="imagens/zap.png">
+                </div>
+            </div>
+
+        </div>
+        <div id="banner">
+
+
+        </div>
+
+        <div id="marcas">
+            <div id="nome">
+                <h1> Infinity Estética Automotiva. </h1>
+            </div>
+        </div>
+
+        <div id=conteudo-contato>
+
+
+
+            <fieldset id=" usuario">
+                <legend>Identificação do Usuário</legend>
+                <p><label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" size="20" maxlength="30"
+                        placeholder="Nome completo" required></p>
+                <p><label for="cemail"> E-mail:</label> <input type="email" name="temail" id="cemail" size="20"
+                        maxlength="30" placeholder="Email"></p>
+                <p><label for="ctel">Telefone:</label> <input type="text" name="ttel" id="ctel" size="17" maxlength="30"
+                        placeholder="Telefone" required></p>
+                <p><label for="ctext">Mensagem:</label></p>
+                <textarea name="ttext" id="ctext" cols="35" rows="5" required></textarea>
+            </fieldset>
+            <input type="image" src="imagens/botao-enviar.png" value="submit" id="cenviar" name="tenviar" onclick="return enviarDados();">
+
+            <div id="resultado">
+                Teste
+            </div>
+
+
+
+        </div>
+
+        <footer id="rodapé">
+            <a href="https://www.facebook.com/infinityesteticaautomotivasp/" target="_blank"><img src="imagens/facebook.png"></a>
+            <h6> © 2015 Inifinity Estética Automotiva. All Rights Reserved. </h6>
+            <h6 id="by"> DESIGN BY HenriqueReis </h6>
+        </footer>
+
+    </div>
+</body>
+
+</html>

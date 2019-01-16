@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Infinity Estética Automotiva</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="javascript/clipboard.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAkCYC_a77L3yEKl_5EVpDaFkKfRtzJF7k",
+            authDomain: "infinityitaquera.firebaseapp.com",
+            databaseURL: "https://infinityitaquera.firebaseio.com",
+            projectId: "infinityitaquera",
+            storageBucket: "infinityitaquera.appspot.com",
+            messagingSenderId: "29143001873"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        function copiar() {
+            document.getElementById("popup").style.opacity = "1";
+            document.getElementById("popup").style.position = "relative";
+            document.getElementById("popup").style.height = "150px";
+            document.getElementById("popup").style.width = "100%";
+        }
+        function soltarCopiar() {
+            document.getElementById("popup").style.opacity = "0";
+            document.getElementById("popup").style.position = "relative";
+            document.getElementById("popup").style.height = "0px";
+            document.getElementById("popup").style.width = "0%";
+        }
+        function sendMail() {
+            var link = "mailto:henriquereissp@gmail.com";
+
+            window.location.href = link;
+        }
+        function abrirPagina() {
+            window.open('https://www.facebook.com/infinityesteticaautomotivasp');
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="interface">
+        <div class="menu-principal">
+            <div class="logo">
+                <!--  <img src="imagens/logo.png"> -->
+            </div>
+            <div class="lista-menu">
+                <ul>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="index.html">Home</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="fotos.html">Fotos</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="local.html">Localização</a></li>
+                    <li onmouseover="" onmouseout=""><a class="item-menu" href="contato.html">Fale
+                            Conosco</a></li>
+                </ul>
+                <div id="zap">
+                    <img src="imagens/zap.png">
+                </div>
+            </div>
+
+        </div>
+        <div id="banner">
+
+
+        </div>
+
+        <div id="marcas">
+            <div id="nome">
+                <h1> Infinity Estética Automotiva. </h1>
+            </div>
+        </div>
+
+        <div id=conteudo>
+            <div id=conteudo-esquerda>
+                <div class="fotos1" onclick="alerta();">
+                </div>
+                <h2> Funilaria</h2>
+                <p id="descricao">
+                    Profissionais quali&shyficados e devidamente treinados fazem parte de nossa equipe, uma vez que
+                    a
+                    tecnologia automotiva
+                    está em constante evolução.
+
+                    Nossos reparos são feitos de forma que a originalidade do veículo seja mantida, afim de se
+                    preservar a integridade de
+                    seu veículo.
+                    <br>
+                    <br>
+
+                </p>
+            </div>
+            <div id=conteudo-meio>
+                <div class="fotos2">
+                </div>
+                <h2> Pintura</h2>
+                <p id="descricao">
+                    A funilaria e Pintura da Doctor possui modernos equipamentos que possibilitam desamassar
+                    seu
+                    veículo
+                    sem a necessidade
+                    de desmontagem, e profissionais treinados para reparação, desde pequenos amassados até
+                    grandes
+                    avarias
+                    mantendo a
+                    máxima originalidade.
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div id=conteudo-direita>
+                <div class="fotos3">
+                </div>
+                <h2> Martelinho de ouro</h2>
+                <p id="descricao">
+                    Também conhecida como Funilaria Artesanal, nos fazemos o reparo no seu carro
+                    sem danificar a pintura original, mantendo sempre a originalidade do veiculo.
+                    Nossos profissionais são experientes e habilidosos para a aplicação desse metodo,
+                    mantendo seu carro com o aspecto original de novo.
+                </p>
+            </div>
+            <div id=conteudo-direita2>
+                <div class="fotos4">
+                </div>
+                <h2> Polimento </h2>
+                <p id="descricao">
+                    Exposições a intempéries e lavagens inadequadas ao longo dos dias, acabam por desgastar a
+                    qualidade
+                    e brilho da pintura
+                    de seu veículo.
+
+                    Nossos processos e produtos utilizados revitalizam a pintura, mantendo o mesmo com aspecto
+                    de
+                    zero.
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+
+            <div id="cartao-principal">
+
+            </div>
+            <div id="contato">
+                <a class="regiao" href="https://goo.gl/maps/D3tSh7xbbq32" target="_blank"></a>
+                <div class="telefone" data-clipboard-text="1120562417" onclick="copiar(); " onmouseout="soltarCopiar();"></div>
+                <div class="telefone2" data-clipboard-text="011965420714" onclick="copiar(); " onmouseout="soltarCopiar(1);"></div>
+                <div class="email" onclick="sendMail();" onmouseout=""></div>
+                <div class="facebook" onclick="abrirPagina();" onmouseout=""> </div>
+                <a href="https://goo.gl/maps/D3tSh7xbbq32" target="_blank" class="endereco" onclick="" onmouseout="">
+                </a>
+
+                <div id="popup">
+                    <h1> Telefone copiado </h1>
+                </div>
+                <script>
+                    var clipboard = new ClipboardJS('.telefone');
+                    var clipboard2 = new ClipboardJS('.telefone2');
+                    clipboard.on('success', function (e) {
+                        console.log(e);
+                    });
+                    clipboard.on('error', function (e) {
+                        console.log(e);
+                    });
+                </script>
+            </div>
+
+        </div>
+
+
+
+
+        <footer id="rodapé">
+            <a href="https://www.facebook.com/infinityesteticaautomotivasp/" target="_blank"><img src="imagens/facebook.png"></a>
+            <h6> © 2015 Inifinity Estética Automotiva. All Rights Reserved. </h6>
+            <h6 id="by"> DESIGN BY HenriqueReis </h6>
+        </footer>
+
+    </div>
+</body>
+
+</html>

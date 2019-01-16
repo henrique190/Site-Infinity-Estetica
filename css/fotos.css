@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'trajan';
+    src: url("../fontes/trajan-pro.otf");
+}
+
+div#conteudo-fotos {
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5);
+}
+
+ul#album-fotos {
+    width: 700px;
+    margin: 0px auto 0px auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+
+}
+
+ul#album-fotos li#foto01 {
+    background: url("../imagens_ad/a1.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto01:hover {
+    background: url("../imagens_ad/d1.jpg") no-repeat;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto02 {
+    background: url("../imagens_ad/a2.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto02:hover {
+    background: url("../imagens_ad/d2.jpg") no-repeat;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto03 {
+    background: url("../imagens_ad/a3.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto03:hover {
+    background: url("../imagens_ad/d3.jpg") no-repeat;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+ul#album-fotos li#foto04 {
+    background: url("../imagens_ad/a4.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto04:hover {
+    background: url("../imagens_ad/d4.jpg") no-repeat;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto05 {
+    background: url("../imagens_ad/a5.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto05:hover {
+    background: url("../imagens_ad/d5.jpg") no-repeat;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto06 {
+    background: url("../imagens_ad/a6.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto06:hover {
+    background: url("../imagens_ad/d6.jpg") no-repeat;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto07 {
+    background: url("../imagens_ad/a7.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto07:hover {
+    background: url("../imagens_ad/d7.jpg") no-repeat;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto08 {
+    background: url("../imagens_ad/a8.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto08:hover {
+    background: url("../imagens_ad/d8.jpg") no-repeat;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto09 {
+    background: url("../imagens_ad/a9.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto09:hover {
+    background: url("../imagens_ad/d9.jpg") no-repeat;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos span {
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    padding: 5px;
+    line-height: 370px;
+}
+
+ul#album-fotos li:hover span{
+    opacity: 1;
+}
+
+ul#album-fotos li:hover {
+    transform: scale(1.5);
+    transition: all 0.4s ease-in;
+}
+
+
+#conteudo-fotos p {
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    padding: 10px;
+    margin-bottom: 0px;
+    font-family: 'trajan';
+    
+}
